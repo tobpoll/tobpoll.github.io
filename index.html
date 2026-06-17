@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ============================================================
+       EDIT: Change the title to your name
+  ============================================================ -->
+  <title>Toby Pollard — Design Portfolio</title>
+
+  <!-- Google Font: Lato (free, served to all visitors) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       HEADER / NAV
+       EDIT: Replace "Toby Pollard" with your name.
+       Add or remove <a> links to match your pages.
+  ============================================================ -->
+  <header>
+    <div id="site-name">
+      <a href="index.html">Toby Pollard</a>
+    </div>
+    <nav>
+      <a href="index.html" class="active">Work</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ============================================================
+       MAIN LAYOUT: sidebar (project list) + content area
+  ============================================================ -->
+  <div id="layout">
+
+    <!-- ============================================================
+         LEFT SIDEBAR — PROJECT LIST
+         EDIT: Each <li> is one project. Change the text and the
+         href to match your project filenames (e.g. project-01.html).
+         Add or remove <li> items freely.
+    ============================================================ -->
+    <aside id="sidebar">
+      <ul>
+        <li><a href="project-01.html">A Storm Which Never Existed (2026)</a></li>
+        <!-- Add more projects here by duplicating a <li> line -->
+      </ul>
+    </aside>
+
+    <!-- ============================================================
+         CONTENT AREA — a random project image appears here.
+         The image is chosen by script.js from the list of images
+         you add there. Clicking it opens that project.
+         You don't need to edit anything in this block.
+    ============================================================ -->
+    <main id="content">
+      <a id="random-link" href="#">
+        <img id="random-image" alt="" />
+      </a>
+      <p id="random-empty" class="intro" hidden>
+        Add some images to the list in script.js and a random one
+        will appear here.
+      </p>
+    </main>
+
+  </div><!-- /layout -->
+
+  <script src="script.js"></script>
+</body>
+</html>

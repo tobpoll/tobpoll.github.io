@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ============================================================
+       EDIT: Change the title to match this project name
+  ============================================================ -->
+  <title>Indeterminate Dice (2026) — Toby Pollard</title>
+
+  <!-- Google Font: Lato (free, served to all visitors) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div id="site-name">
+      <a href="index.html">Toby Pollard</a>
+    </div>
+    <nav>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div id="layout">
+
+    <aside id="sidebar">
+      <ul>
+        <!-- EDIT: Keep this list identical to index.html.
+             Add class="current" to whichever project this page is. -->
+        <li><a href="project-01.html">A Storm Which Never Existed (2026)</a></li>
+        <li class="current"><a href="project-02.html">Indeterminate Dice (2026)</a></li>
+        <li><a href="project-03.html">How Do You Know If The Same Raindrop Hits You Twice? (2025)</a></li>
+      </ul>
+    </aside>
+
+    <main id="content">
+
+      <!-- ============================================================
+           PROJECT DESCRIPTION
+           EDIT: Write about this project here. Keep it concise.
+           You can use <p> for paragraphs and <br> for line breaks.
+      ============================================================ -->
+      <div class="project-text project-text--top">
+        <p>
+          There is a dice sitting on a bedside table, it has four pips on
+          top. It is then moved and rolled in the context of a game; it
+          settles with an identical orientation to that which it had on the
+          bedside table.
+        </p>
+        <p>
+          This is not the same object.
+        </p>
+        <p>
+          Inspired by Barad’s concept of Agential Realism, ‘Indeterminate Dice’
+          attempt to demonstrate that objects are created through
+          interaction (intra-action), and do not posses existence outside
+          of our intra-actions with them.
+        </p>
+        <p>
+          A dice which has a fixed value of four, is not the same object as
+          when it merely shows four pips, it has been remade as an entirely
+          new thing through its entanglement with a user/observer.
+        </p>
+      </div>
+
+      <!-- ============================================================
+           PROJECT IMAGES
+           EDIT: Replace the src="" values with your actual image paths.
+           Images go in the /images/ folder.
+           Add or remove <figure> blocks to add/remove images.
+           The alt="" text describes the image for accessibility —
+           write a short description of what's shown.
+      ============================================================ -->
+      <figure>
+        <video controls muted playsinline preload="metadata">
+          <source src="images/indeterminate-dice/dice-roll-1.mp4" type="video/mp4" />
+        </video>
+      </figure>
+
+      <figure>
+        <video controls muted playsinline preload="metadata">
+          <source src="images/indeterminate-dice/dice-roll-2.mp4" type="video/mp4" />
+        </video>
+      </figure>
+
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -14,14 +14,19 @@
 // As you build projects, just add their images here.
 // ----------------------------------------------------------------
 const homepageImages = [
-  // --- Temporary placeholders so you can see the feature working. ---
-  // Delete these and replace with your real project images.
-  { src: "images/placeholder-01.svg", link: "project-01.html" },
-  { src: "images/placeholder-02.svg", link: "project-01.html" },
-  { src: "images/placeholder-03.svg", link: "project-01.html" },
-  { src: "images/placeholder-04.svg", link: "project-01.html" },
-  // Real example format:
-  // { src: "images/project-01-a.jpg", link: "project-01.html" },
+  // A Storm Which Never Existed
+  { src: "images/a-storm-which-never-existed/console.jpg", link: "project-01.html" },
+  { src: "images/a-storm-which-never-existed/prints.jpg", link: "project-01.html" },
+  { src: "images/a-storm-which-never-existed/satellite.jpg", link: "project-01.html" },
+  { src: "images/a-storm-which-never-existed/entire-document.jpg", link: "project-01.html" },
+  // How Do You Know If The Same Raindrop Hits You Twice?
+  { src: "images/how-do-you-know-if-the-same-raindrop-hits-you-twice/rain-1.jpg", link: "project-03.html" },
+  { src: "images/how-do-you-know-if-the-same-raindrop-hits-you-twice/rain-2.jpg", link: "project-03.html" },
+  { src: "images/how-do-you-know-if-the-same-raindrop-hits-you-twice/rain-3.jpg", link: "project-03.html" },
+  { src: "images/how-do-you-know-if-the-same-raindrop-hits-you-twice/raindrop-video-poster.jpg", link: "project-03.html" },
+  // Indeterminate Dice (still frames from the videos)
+  { src: "images/indeterminate-dice/dice-roll-1-poster.jpg", link: "project-02.html" },
+  { src: "images/indeterminate-dice/dice-roll-2-poster.jpg", link: "project-02.html" },
   // Add more lines above this one.
 ];
 

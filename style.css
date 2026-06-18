@@ -38,7 +38,7 @@
   --font-size-meta:  13px;
 
   /* Layout */
-  --sidebar-width:  300px;
+  --sidebar-width:  340px;
   --header-height:  44px;
   --space-outer:    28px;      /* outer page margin */
   --space-content:  40px;      /* gap between sidebar and content */
@@ -152,13 +152,21 @@ nav a.active {
   color: var(--color-text);
   display: block;
   line-height: 1.4;
-  white-space: nowrap;
+  /* Allow long titles to wrap onto as many lines as needed to fit */
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+
+/* Give a little breathing room between multi-line titles */
+#sidebar ul li {
+  margin-bottom: 8px;
 }
 #sidebar ul li a:hover {
   color: var(--color-muted);
 }
 #sidebar ul li.current a {
   color: var(--color-text);
+  font-weight: 700;
 }
 
 /* ---- Content ---- */
@@ -215,14 +223,24 @@ figure {
   margin-bottom: 16px;
 }
 
-figure img {
+figure img,
+figure video {
   width: 100%;
+  display: block;
 }
 
 /* Project description text */
 .project-text {
   margin-top: 24px;
   max-width: 520px;
+}
+
+/* When the description sits above the images, remove the top gap and
+   add space below it instead. */
+.project-text--top {
+  margin-top: 0;
+  margin-bottom: 28px;
+  max-width: none;   /* match the full width of the images below */
 }
 
 .project-text p {
@@ -304,6 +322,9 @@ figure img {
     flex-direction: column;
     padding: 16px;
     gap: 24px;
+    /* Hug the content instead of stretching to full viewport height,
+       which otherwise leaves a tall blank white area at the bottom. */
+    min-height: 0;
   }
 
   #sidebar {
@@ -327,8 +348,8 @@ figure img {
   }
 
   #layout:has(#random-link) #sidebar {
-    width: auto;
-    min-width: 110px;
+    /* Bounded width so the image keeps its space; long titles wrap inside */
+    width: 42%;
     flex-shrink: 0;
     /* Back to a vertical divider since it stays side by side here */
     border-right: 1px solid var(--color-text);
